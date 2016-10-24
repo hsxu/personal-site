@@ -30,20 +30,21 @@
   padding: 0;
 }   
 
-.main_container {   
+.main-container {   
     text-align: center;
 }
 
-.intro_container {
-    text-align: left;
+.intro-container {
+    text-align: center;
     height: 300px;
-    line-height: 100px;
-    color: #0d849a;
-    font-size: 72px;
+    line-height: 300px;
+    color: white;
+    font-size: 48px;
     font-family: "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
-    background-image: url('/images/whiteness.jpg');
+    background-image: url('/images/intro.jpg');
     /* Use proxima font */
     background-size: cover;
+    letter-spacing: 0.2em;
     opacity: 1;
 }
