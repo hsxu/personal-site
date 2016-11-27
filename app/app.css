@@ -29,6 +29,38 @@ p {
 .name {
     height: 40px;
     padding-top: 130px;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+.menu {
+    height: 40px;
+    font-size: 20px;
+    letter-spacing: 0em;
+    -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+.menu-projects {
+    cursor: pointer;
+}
+
+.menu-projects:hover {
+    color: #0bacff;
+}
+
+.menu-resume {
+    cursor: pointer;
+}
+
+.menu-resume:hover {
+    color: #0bacff;
 }
 
 .projects-title {
@@ -39,22 +71,60 @@ p {
 }
 
 .project {
-    height: 100px;
-    background-color: purple;
+    height: 300px;
     text-align: left;
+}
+
+.project .left-container {
+    height: 200px;
+    width: 35%;
+    float:left;
+    font-size: 26px;
+    margin-right: 10px;
+
+}
+
+.project .title-thumb-container {
+    height: 200px;
+    width: 248px;
+    margin: auto;
+    padding-left: 20%;
 }
 
 .project .title {  
     height: 40px;
-    padding: 40px 0px 0px 40px;
+    width: 248px;
+    padding: 0px 0px 0px 0px;   
     letter-spacing: 0em;
-    color: white;
+    /*color: #0e81b3;*/
+    line-height: 0.8em;
+    color: black;
+    text-align: center;
 }
 
-.menu {
-    height: 40px;
-    font-size: 20px;
-    letter-spacing: 0em;
+.project .thumbnail {
+    height: 160px;
+    width: 248px;
+    margin: 0px 0px 0px 0px;
+    background-color: gray;
+    background-image: url('/images/compare_phones.png');
+    background-size: contain;
+    border: 1px solid #0bacff;
+}
+
+.project .right-container {
+    height: 200px;
+    width: 60%;
+    float: left;
+    font-size: 26px;
+    margin-left: 10px;
+    position: relative;
+}
+
+.desc {
+    position: absolute;              
+    top: 50%;                         
+    transform: translate(0, -50%);
 }
 
 .intro-container {
@@ -74,10 +144,40 @@ p {
 
 .projects-container {
     text-align: center;
-    height: 500px;
+    height: 1000px;
     background-color: #DEDEDE;
     color: black;
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
+}
+
+/*http://stackoverflow.com/questions/11679567/using-css-for-fade-in-effect-on-page-load*/
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
