@@ -56,13 +56,23 @@ p {
     color: #0bacff;
 }
 
-.menu-resume {
+.menu-item {
     cursor: pointer;
+    padding: 0px 10px 0px 10px;
 }
 
-.menu-resume:hover {
+.menu-item:hover {
     color: #0bacff;
 }
+
+.menu .resume {
+    padding-left: 0px;
+}
+
+a { 
+    color: inherit; 
+    text-decoration: none;
+} 
 
 .projects-title {
     height: 40px;
@@ -72,23 +82,68 @@ p {
 }
 
 .project {
-    height: 250px;
+    height: auto;
+    max-width: 1200px;
     text-align: left;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    overflow:hidden;
 }
 
 .project .left-container {
-    height: 200px;  
+    height: auto;  
     width: 35%;
     float:left;
     font-size: 26px;
     margin-right: 10px;
 }
 
-.project .title-thumb-container {
+.project .right-container {
     height: 200px;
+    width: 60%;
+    float: left;
+    font-size: 26px;
+    position: relative;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.desc {
+    text-align: left;
+    height: auto;
+    position: absolute;              
+    top: 50%;                         
+    transform: translate(0, -50%);
+    font-weight: 500;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width: 1080px) {
+    /* For desktop: */
+    .project .left-container {width: 100%;}
+    .project .right-container {
+        width: auto; 
+        height: auto;
+        text-align: center;
+        padding-right: 60px;
+        padding-left: 60px;
+        padding-top: 20px;
+    }
+    .desc {
+        position: static;
+        padding: 0px;
+        text-align: center;
+    }
+}
+
+.project .title-thumb-container {
+    height: 202px;
     width: 248px;
     margin: auto;
-    padding-left: 20%;
 }
 
 .project .title {  
@@ -109,6 +164,7 @@ p {
     background-color: gray;
     border: 1px solid black;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .gf {
@@ -125,31 +181,24 @@ p {
     background-size: cover;
 }
 
+.resume-img, .github-img, .linkedin-img {
+    margin-bottom: 4px;
+    margin-right: 2px;
+}
+
+.github-img, .linkedin-img {
+    margin-right: 4px;
+}
+
 .intro-desc {
-    height: 80px;
+    height: auto;
     width: 60%;
     letter-spacing: 0em;
-    padding: 20px 0px 20px 0px;
+    padding: 20px 0px 60px 0px;
     font-weight: 300;
     display: block;
     margin: 0 auto;
     font-size: 24px;
-}
-
-.project .right-container {
-    height: 200px;
-    width: 50%;
-    float: left;
-    font-size: 26px;
-    margin-left: 10px;
-    position: relative;
-}
-
-.desc {
-    position: absolute;              
-    top: 50%;                         
-    transform: translate(0, -50%);
-    font-weight: 500;
 }
 
 .intro-container {
@@ -171,22 +220,26 @@ p {
 
 .projects-container {
     text-align: center;
-    height: 1500px;
-    color: black;
+    height: auto;
+    color: white;
     /*For silver brushed background*/
-    background-image: url('/images/brushed.png');
+
+    /*background-color: #3c7d6b;*/
+    background-image: url('/images/noise.png');
     background-size: fit;
-    /*background-color: #2B1820;*/
+
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .about-container {
     text-align: center;
-    height: 340px;
-    background-color: #3c7d6b;
+    height: auto;
+    /*background-color: #3c7d6b;
     /* green: #3c7d6b;*/
-    color: white;
+    color: black;
+    background-image: url('/images/brushed.png');
+    background-size: fit;
 
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
