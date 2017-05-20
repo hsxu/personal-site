@@ -125,7 +125,16 @@ p {
     background-size: cover;
 }
 
-
+.intro-desc {
+    height: 80px;
+    width: 60%;
+    letter-spacing: 0em;
+    padding: 20px 0px 20px 0px;
+    font-weight: 300;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px;
+}
 
 .project .right-container {
     height: 200px;
@@ -154,7 +163,6 @@ p {
     background-image: url('/images/intro.jpg');
     /* Use proxima font:  */
     background-size: cover;
-    max-width: 1800px;
     letter-spacing: 0.2em;
     opacity: 1;
     display: block;
@@ -173,9 +181,13 @@ p {
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.next-container {
-    height: 300px;
-    background-color: #f0f0f0;
+.about-container {
+    text-align: center;
+    height: 340px;
+    background-color: #3c7d6b;
+    /* green: #3c7d6b;*/
+    color: white;
+
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
