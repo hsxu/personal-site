@@ -24,11 +24,12 @@ p {
 
 .main-container {   
     text-align: center;
+    background-color: #2B1820;
 }
 
 .name {
     height: 40px;
-    padding-top: 180px;
+    padding-top: 280px;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 4s; /* Firefox < 16 */
         -ms-animation: fadein 4s; /* Internet Explorer */
@@ -67,6 +68,7 @@ p {
     height: 40px;
     letter-spacing: 0em;
     padding: 40px 0px 40px 0px;
+    font-weight: 500;
 }
 
 .project {
@@ -97,6 +99,7 @@ p {
     /*color: #0e81b3;*/
     line-height: 0.8em;
     text-align: center;
+    font-weight: 500;
 }
 
 .project .thumbnail {
@@ -104,11 +107,25 @@ p {
     width: 248px;
     margin: 0px 0px 0px 0px;
     background-color: gray;
-    background-image: url('/images/compare_phones.png');
-    background-size: contain;
     border: 1px solid black;
     border-radius: 8px;
 }
+
+.gf {
+    background-image: url('/images/rs.png');
+    background-size: cover;
+}
+
+.cp {
+    background-image: url('/images/phone_compare.png');
+    background-size: cover;
+}
+.typeracing {
+    background-image: url('/images/tr.png');
+    background-size: cover;
+}
+
+
 
 .project .right-container {
     height: 200px;
@@ -123,29 +140,35 @@ p {
     position: absolute;              
     top: 50%;                         
     transform: translate(0, -50%);
+    font-weight: 500;
 }
 
 .intro-container {
     text-align: center;
-    height: 400px;
+    height: 600px;
     line-height: 0px;
     color: white;
     font-size: 48px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 100;
     background-image: url('/images/intro.jpg');
-    /* Use proxima font */
+    /* Use proxima font:  */
     background-size: cover;
+    max-width: 1800px;
     letter-spacing: 0.2em;
     opacity: 1;
+    display: block;
+    margin: 0 auto;
 }
 
 .projects-container {
     text-align: center;
     height: 1500px;
     color: black;
+    /*For silver brushed background*/
     background-image: url('/images/brushed.png');
     background-size: fit;
+    /*background-color: #2B1820;*/
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: 200;
