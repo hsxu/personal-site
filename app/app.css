@@ -78,6 +78,14 @@ a {
 
 .user {
     padding-top: 40px;
+    height:30px;
+    width: 30px;
+}
+
+.suitcase {
+    padding-top: 40px;
+    height:30px;
+    width: 30px;
 }
 
 .about-title {
@@ -215,13 +223,13 @@ a {
 
 .resume-img, .github-img, .linkedin-img {
     margin-bottom: 4px;
-    margin-right: 4px;
-    height: 24px;
-    width: 24px;
+    margin-right: 2px;
+    height: 16px;
+    width: 16px;
 }
 
 .github-img, .linkedin-img {
-    margin-right: 6px;
+    margin-right: 4px;
 }
 
 .intro-desc {
