@@ -24,7 +24,8 @@ p {
 
 .main-container {   
     text-align: center;
-    background-color: #2B1820;
+    background-image: url('/images/noise.png');
+    background-size: fit;
 }
 
 .name {
@@ -74,11 +75,31 @@ a {
     text-decoration: none;
 } 
 
+.user {
+    padding-top: 40px;
+}
+
+.about-title {
+    height: 40px;
+    letter-spacing: 0em;
+    padding: 10px 0px 20px 0px;
+    font-weight: 500;   
+}
+
 .projects-title {
     height: 40px;
     letter-spacing: 0em;
-    padding: 40px 0px 40px 0px;
+    padding: 20px 0px 20px 0px;
     font-weight: 500;
+}
+
+.footer-title {
+    height: 40px;
+    letter-spacing: 0em;
+    padding: 20px 0px 20px 0px;
+    font-weight: 500;
+    font-size:16px;
+    color: white;
 }
 
 .project {
@@ -90,6 +111,7 @@ a {
     margin-top: 40px;
     margin-bottom: 40px;
     overflow:hidden;
+
 }
 
 .project .left-container {
@@ -141,7 +163,7 @@ a {
 }
 
 .project .title-thumb-container {
-    height: 202px;
+    height: auto;
     width: 248px;
     margin: auto;
 }
@@ -155,6 +177,10 @@ a {
     line-height: 0.8em;
     text-align: center;
     font-weight: 500;
+}
+
+.project .kmeans {
+    padding-bottom: 20px;
 }
 
 .project .thumbnail {
@@ -183,11 +209,11 @@ a {
 
 .resume-img, .github-img, .linkedin-img {
     margin-bottom: 4px;
-    margin-right: 2px;
+    margin-right: 4px;
 }
 
 .github-img, .linkedin-img {
-    margin-right: 4px;
+    margin-right: 6px;
 }
 
 .intro-desc {
@@ -242,6 +268,11 @@ a {
     background-size: fit;
 
     font-size: 36px;
+    font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.footer {
+    height: 100px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
