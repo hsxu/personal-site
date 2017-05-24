@@ -24,7 +24,7 @@ p {
 
 .main-container {   
     text-align: center;
-    background-image: url('/images/noise.png');
+    background-image: url('/images/medblue.png');
     background-size: fit;
 }
 
@@ -91,9 +91,9 @@ a {
 .about-title {
     height: 40px;
     letter-spacing: 0em;
-    padding: 10px 0px 20px 0px;
+    padding: 10px 0px 10px 0px;
     font-weight: 500; 
-    font-size: 26px;  
+    font-size: 22px;  
 }
 
 .projects-title {
@@ -101,7 +101,7 @@ a {
     letter-spacing: 0em;
     padding: 20px 0px 10px 0px;
     font-weight: 500;
-    font-size: 26px;
+    font-size: 22px;
 }
 
 .footer-title {
@@ -109,7 +109,7 @@ a {
     letter-spacing: 0em;
     padding: 20px 0px 20px 0px;
     font-weight: 500;
-    font-size:16px;
+    font-size:12px;
     color: white;
 }
 
@@ -122,6 +122,7 @@ a {
     margin-top: 40px;
     margin-bottom: 40px;
     overflow:hidden;
+    border-radius: 4px;
 
 }
 
@@ -150,10 +151,10 @@ a {
     position: absolute;              
     top: 50%;                         
     transform: translate(0, -50%);
-    font-weight: 500;
+    font-weight: 200;
     padding-left: 40px;
     padding-right: 40px;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 @media (max-width: 1080px) {
@@ -189,12 +190,8 @@ a {
     /*color: #0e81b3;*/
     line-height: 0.8em;
     text-align: center;
-    font-weight: 500;
-    font-size: 24px;
-}
-
-.project .kmeans {
-    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 .project .thumbnail {
@@ -202,9 +199,11 @@ a {
     width: 248px;
     margin: 0px 0px 0px 0px;
     background-color: gray;
-    border: 1px solid black;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
+    -webkit-box-shadow: 0 12px 6px -6px rgba(0, 0, 0, 0.4);
+       -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.4);
 }
 
 .gf {
@@ -219,6 +218,15 @@ a {
 .typeracing {
     background-image: url('/images/tr.png');
     background-size: cover;
+}
+
+.graph-analysis {   
+    background-image: url('/images/heatmap.png');
+    background-size: cover;
+}
+
+.project .kmeans-thumb {
+    margin-top: 20px;
 }
 
 .resume-img, .github-img, .linkedin-img {
@@ -236,11 +244,11 @@ a {
     height: auto;
     width: 60%;
     letter-spacing: 0em;
-    padding: 20px 0px 60px 0px;
+    padding: 10px 0px 40px 0px;
     font-weight: 300;
     display: block;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .intro-container {
@@ -266,8 +274,8 @@ a {
     color: white;
     /*For silver brushed background*/
 
-    /*background-color: #3c7d6b;*/
-    background-image: url('/images/noise.png');
+    /*background-color: #0f506c;*/
+    background-image: url('/images/medblue.png');
     background-size: fit;
 
     font-size: 36px;
