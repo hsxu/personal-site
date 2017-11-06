@@ -30,7 +30,7 @@ p {
 
 .name {
     height: 40px;
-    padding-top: 230px;
+    padding-top: 330px;
     font-size: 36px;
     -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 4s; /* Firefox < 16 */
@@ -151,7 +151,7 @@ a {
     position: absolute;              
     top: 50%;                         
     transform: translate(0, -50%);
-    font-weight: 200;
+    font-weight: 500;
     padding-left: 40px;
     padding-right: 40px;
     font-size: 19px;
@@ -245,7 +245,7 @@ a {
     width: 60%;
     letter-spacing: 0em;
     padding: 10px 0px 40px 0px;
-    font-weight: 300;
+    font-weight: 500;
     display: block;
     margin: 0 auto;
     font-size: 18px;
@@ -253,7 +253,7 @@ a {
 
 .intro-container {
     text-align: center;
-    height: 500px;
+    height: 700px;
     line-height: 0px;
     color: white;
     font-size: 48px;
@@ -274,9 +274,7 @@ a {
     color: white;
     /*For silver brushed background*/
 
-    /*background-color: #0f506c;*/
-    background-image: url('/images/medblue.png');
-    background-size: fit;
+    background: linear-gradient(#291720, #04415c);
 
     font-size: 36px;
     font-family: "Proxima Nova", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -285,10 +283,8 @@ a {
 .about-container {
     text-align: center;
     height: auto;
-    /*background-color: #3c7d6b;
-    /* green: #3c7d6b;*/
-    color: black;
-    background-image: url('/images/brushed.png');
+    color: white;
+    background-color: #291720;
     background-size: fit;
 
     font-size: 36px;
